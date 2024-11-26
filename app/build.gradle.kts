@@ -36,14 +36,29 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.sceneform.ux)
+    implementation(libs.core)
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    // To use SceneViewer Google plugin
+    implementation(libs.androidx.fragment.ktx)
+    // Retrofit
+    implementation(libs.retrofit)
+
+    // Moshi
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
+
+    // Moshi Converter for Retrofit
+    implementation(libs.converter.moshi)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation (libs.arsceneview)//sceneView SDK for AR feature
 }
